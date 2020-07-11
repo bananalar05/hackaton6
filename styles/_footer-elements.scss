@@ -1,43 +1,37 @@
 .footer{
-  
-  &__container{
-    background-color: #316099;  
+  width: 95%;
+  background-color: #316099; 
+  border-top-right-radius: 100px;
+
+  h2, h3, p, a, i {
+    color: map-get($color, cuaternary);
   }
-}
 
+  h3{
+    font-size: 1.2rem;
+  }
 
-/*
-.search {
-  background-color: #f4f4f4;
-  border-radius: 10px;
-  padding: 0 6px 0 15px;
-  margin-bottom: 55px;
+  /* &::before {
+    position: absolute;
+    width: 95%;
+    height: 554px;
+    background: #316099;
+    border-top-right-radius: 100px; 
+    content:"";
+  } */
 
-  &__bar {
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    padding: 15px 10px;
-    font-size: 1rem;
+  &__container{
+    padding-left: 50px;
+  }
 
-    &::placeholder {
-      color: map-get($color, primary);
+  li{
+    margin-bottom: 15px;
+  }
+
+  a{
+    &:hover{
+      text-decoration: underline;
     }
   }
 }
 
-.nav {
-  font-size: 1.2rem;
-  font-weight: bold;
-li {
-  margin-left: 50px;
-}
-
-a {
-  color: map-get($color, primary);
-  &:hover {
-    text-decoration: underline;
-    font-weight: bolder;
-  }
-}
-}
